@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM 
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+   <session-factory>
+   <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+   <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+
+   <!-- Assume test is the database name -->
+   <property name="hibernate.connection.url">jdbc:mysql://localhost/hibernate_learn</property>
+   <property name="hibernate.connection.username">root</property>
+   <property name="hibernate.connection.password"></property>
+
+   
+    <!-- show sql in the sysout -->
+    <property name="show_sql">true</property>
+    
+    <!-- drop and re-create the database shema on startup -->
+    <property name="hbm2ddl.auto">update</property>
+    
+   <!-- List of XML mapping files -->
+   <mapping class="hibernate_learn.modal.Account"/>
+   <mapping class="hibernate_learn.modal.Enseignant"/>
+   <mapping class="hibernate_learn.modal.Etudiant"/>
+   
+      
+</session-factory>
+</hibernate-configuration>

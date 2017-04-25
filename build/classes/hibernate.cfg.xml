@@ -21,8 +21,6 @@
     
    <!-- List of XML mapping files -->
    <mapping class="hibernate_learn.modal.Account"/>
-   <mapping class="hibernate_learn.modal.Enseignant"/>
-   <mapping class="hibernate_learn.modal.Etudiant"/>
    
       
 </session-factory>

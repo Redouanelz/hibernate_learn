@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 
 
 @Entity
+
 public class Etudiant  extends Account{
 	private String Note;
 
